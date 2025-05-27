@@ -5,6 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>국내 출사지 모음집</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-chubby/css/uicons-regular-chubby.css'>
+  <style>
+    .gallery-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 2rem;
+     max-width: 700px;
+     margin: 0 auto;
+   }
+
+   div.gallery {
+     border: 1px solid #ccc;
+     width: 300px;
+     padding: 1.5rem;
+     background-color: #fff;
+     box-shadow: 0 0 20px rgba(0,0,0,0.1);
+     border-radius: 8px;
+     box-sizing: border-box;
+     margin: 0;
+     float: none;
+    }
+
+   div.gallery:hover {
+     border: 1px solid #777;
+   }
+
+   div.gallery img {
+     width: 100%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+     text-align: center;
+   }
+
+   div.desc {
+     font-size: 18px;
+     padding: 10px;
+     font-weight: bold;
+     text-align: center;
+   }
+   p {
+     font-size: 20px;
+     line-height: 1.2;
+   }
+   i{
+      font-size: 37px;
+      font-weight: bold;
+   }
+</style>
 </head>
 
 <body>
@@ -27,18 +77,48 @@
         <a href="#" class="dropbtn">인천</a>
         <div class="dropdown-content" >
           <a href="./junggu/junggu.html">중구</a>
-          <a href="http://www.youtube.com">남동구</a>
-          <a href="http://www.naver.com">송도</a>
+          <a href="./namdonggu/namdonggu.html">남동구</a>
+          <a href="./songdo/songdo.html">송도</a>
         </div>
       </li>
     </ul>
-   </div>
+  </div>
 
   <div class="container">
-   <h1>환영합니다</h1>
+   <i class="fi fi-rc-introduction">&nbsp;환영합니다</i>
    <p>본 홈페이지는 사진 찍으러 다니는걸 좋아하는 이들을 위한 출사지 소개 사이트입니다.</p>
    <p>수도권을 중심으로 다양한 출사지들을 소개할 예정입니다.</p>
    <p>현재는 출사지 종류가 많지 않지만 해당페이지는 지속적으로 업데이트 될 예정입니다.</p>
+   <br>
+   <br>
+
+  <!--출사지 예시 사진과 함께 클릭하면 상세페이지로 이동하게 만들었습니다.--> 
+   <div class="gallery-container">
+    <div class="gallery">
+     <a target="_self" href="./mapogu/skypark.html">
+      <img src="./image/skypark_1.jpg" alt="하늘공원 갈대" width="600" height="400">
+     </a>
+     <div class="desc">서울 하늘공원 갈대밭</div>
+    </div>
+    <div class="gallery">
+      <a target="_self" href="./sungdonggu/moonpark.html">
+        <img src="./image/moonpark_1.jpg" alt="달맞이근린공원" width="400" height="600">
+      </a>
+      <div class="desc">서울 달맞이근린공원</div>
+    </div>
+    <div class="gallery">
+      <a target="_self" href="./yongsan/5danji.html">
+        <img src="./image/5danji_1.JPG" alt="장교숙소5단지" width="400" height="600">
+      </a>
+      <div class="desc">해가 지는 용산공원</div>
+    </div>
+    <div class="gallery">
+      <a target="_self" href="./junggu/gaehang.html">
+        <img src="./image/gaehang_1.jpg" alt="개항장거리" width="400" height="600">
+      </a>
+      <div class="desc">개항장거리 골목길 속 과거와 현재</div>
+    </div>
   </div>
+
 </body>
 </html>
